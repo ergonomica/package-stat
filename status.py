@@ -24,10 +24,10 @@ def cpu(env, args, kwargs):
  def _ram(command):
      if command == "free":
          return psutil.virtual_memory().free
-    
+     
 def ram(env, args, kwargs):
      return list(map(_ram, args))
 
 verbs = {"cpu":cpu,
          "ram":ram,
-        }
+}
