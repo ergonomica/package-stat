@@ -1,7 +1,7 @@
 """
-[stat.py]
+[status.py]
 
-The Ergonomica `stat` module.
+The Ergonomica `status` module.
 """
 
 import platform
@@ -21,12 +21,12 @@ def _cpu(command):
 def cpu(env, args, kwargs):
     return list(map(_cpu, args))
 
-def _ram(command):
-    if command == "free":
-        return psutil.virtual_memory().free
+ def _ram(command):
+     if command == "free":
+         return psutil.virtual_memory().free
     
 def ram(env, args, kwargs):
-    return list(map(_ram, args))
+     return list(map(_ram, args))
 
 verbs = {"cpu":cpu,
          "ram":ram,
