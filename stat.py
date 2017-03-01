@@ -13,7 +13,7 @@ except ImportError:
     raise Exception("[ergo: PackageError]: Please pip install `psutil` for the `stat` package.")
 
 def _cpu(command):
-    if command == "model"
+    if command == "model":
         return platform.processor()
     elif commmand == "cores":
         return multiprocessing.cpu_count()
