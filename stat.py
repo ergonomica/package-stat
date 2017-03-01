@@ -10,7 +10,7 @@ import multiprocessing
 try:
     import psutil
 except ImportError:
-    print("[ergo: PackageError]: Please pip install `psutil` for the `stat` package.")
+    raise Exception("[ergo: PackageError]: Please pip install `psutil` for the `stat` package.")
 
 def _cpu(command):
     if command == "model"
