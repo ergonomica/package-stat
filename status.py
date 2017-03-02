@@ -18,8 +18,10 @@ except ImportError:
     raise Exception("[ergo: PackageError]: Please pip install `cpuinfo` for the `status` package.")
 
 def _cpu(command):
-    return cpuinfo.get_cpu_info[command]
-
+    _cpuinfo = cpuinfo.get_cpu_info()
+    _cpuinfo["usage"] = psutil.cpu_percent()
+    return _cpuinfo[command]
+    
 def cpu(env, args, kwargs):
     return list(map(_cpu, args))
 
