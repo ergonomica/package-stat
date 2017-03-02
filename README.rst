@@ -6,7 +6,13 @@ package-status
 Installation (with epm)
 -----------------------
 
-Just do
+First, install required dependencies through pip, like so:
+
+.. code::
+   
+   pip install psutil cpuinfo
+
+and then run
 
 .. code::
 
@@ -16,7 +22,13 @@ Just do
 Installation (without epm)
 --------------------------
 
-Download :code:`status.py` from this repository and place it in :code:`~/.ergo/packages`.
+First, install required dependencies through pip, like so:
+
+.. code::
+   
+   pip install psutil cpuinfo
+
+Then, download :code:`status.py` from this repository and place it in :code:`~/.ergo/packages`.
 
 Usage
 -----
