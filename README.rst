@@ -41,6 +41,7 @@ Use the `cpu` command.
 Get the percent CPU utilization:
 
 .. code::
+
    $ cpu usage
    [50.6]
    
@@ -61,24 +62,35 @@ Get the advertised CPU clock speed:
 Get the current CPU clock speed:
 
 .. code::
+
    $ hz_actual
    1.1374 GHz
 
 Get the CPU model name:
 
 .. code::
+
    $ cpu brand
    Intel(R) Core(TM) i5-5250U CPU @ 1.60GHz
 
 Get the CPU architecture/bits:
 
 .. code::
+
    $ cpu bits
    64
    
 RAM Statistics
 ~~~~~~~~~~~~~~
 
+Get the amount of RAM free:
+
+.. code::
+
+   $ ram free
+   [846372864]
+
+   
 Disk Statistics
 ~~~~~~~~~~~~~~~
 
