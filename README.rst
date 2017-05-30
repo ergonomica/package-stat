@@ -1,5 +1,7 @@
-package-status
-==============
+package-status (DEPRECATED)
+===========================
+
+**THIS PROJECT HAS BEEN DEPRECATED IN FAVOR OF BUILT-IN ERGONOMICA FUNCTIONALITY.**
 
 :code:`status` makes CPU/RAM/Disk usage statistics easily available throgh Ergonomica.
 
